@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int a, amount, summa;
+    scanf("%d", &a);
+    if(a < 500){
+        amount = 500 - a + 1;
+        summa = (a + 500)/2 * amount;
+        printf("%d", summa);
+    } else{
+        printf("number a should be < 500");
+    }
+}

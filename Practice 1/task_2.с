@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int km, m;
+    scanf("%d", &km);
+    scanf("%d", &m);
+    km*=1000;
+    if (km < m){
+        printf("%d", km);
+    } else {
+        printf("%d", m);
+    }
+}
