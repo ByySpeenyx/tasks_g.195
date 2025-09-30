@@ -26,10 +26,12 @@ def func(a):
                 if sum(m)+a[i]>1:
                     m.append(a[i])
                 else:
-                    mx=sum(m)
+                    if sum(m)>mx:
+                        mx=sum(m)
                     m=[]
     return mx                
 n=int(input())
 a=[int(input()) for i in range(n)]
 print(func(a))
+
 
